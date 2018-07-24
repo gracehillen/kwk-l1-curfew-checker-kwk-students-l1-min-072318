@@ -24,8 +24,13 @@ end
 
 def deluxe_curfew_checker(time)
   curfew = 11
-  time - #{curfew}
-  puts "You have "
+  if time > 11
+     puts "past curfew"
+  elsif time == 11
+     puts "Go home!"
+  else hoursleft == time - #{curfew}
+    puts "You have #{hoursleft} before curfew"
+  end
 end
 
 def platinum_curfew_checker(current_time, curfew_time)
